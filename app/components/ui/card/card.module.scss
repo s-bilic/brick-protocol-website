@@ -1,0 +1,18 @@
+.card {
+  background: rgba(var(--color-light), 0.1);
+  padding: var(--spacing-m);
+  border-radius: var(--radius-s);
+}
+
+.outline {
+  
+  border: solid 2px orange;
+}
+
+.wrapper {
+  padding-top: 20px;
+}
+
+.title {
+  padding-bottom: var(--spacing-xs);
+}

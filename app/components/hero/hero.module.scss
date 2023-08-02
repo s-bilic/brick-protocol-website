@@ -1,0 +1,20 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px;
+}
+
+.content {
+  margin-top: var(--spacing-m);
+  text-align: center;
+}
+
+.items {
+  margin: 100px 0;
+  display: grid;
+  width: 100%; 
+  grid-template-columns: 33% 33% 33%;
+  gap: var(--spacing-l);
+}
