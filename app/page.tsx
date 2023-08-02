@@ -1,5 +1,5 @@
 import styles from "./styles/page.module.scss";
-import { Hero, Steps, Cta } from "@components";
+import { Hero, Steps, Cta, Cards } from "@components";
 
 const dataHero = {
   title: "Brick Protocol",
@@ -70,12 +70,42 @@ const dataCta = {
   url: "/",
 };
 
+const dataCards = {
+  items: [
+    {
+      title: "Fees",
+      description:
+        "You want to automate refunds and streamline your business operations.",
+      icon: {
+        name: "atom",
+      },
+    },
+    {
+      title: "Fees",
+      description:
+        "You want to automate refunds and streamline your business operations.",
+      icon: {
+        name: "atom",
+      },
+    },
+    {
+      title: "Fees",
+      description:
+        "You want to automate refunds and streamline your business operations.",
+      icon: {
+        name: "atom",
+      },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <Hero {...dataHero} />
       <Cta {...dataCta} />
       <Steps {...dataSteps} />
+      <Cards {...dataCards} />
     </main>
   );
 }

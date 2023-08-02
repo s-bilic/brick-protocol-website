@@ -1,0 +1,27 @@
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 33% 33% 33%;
+  gap: var(--spacing-l);
+}
+
+.item {
+  padding: 0;
+  overflow: hidden;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(225 0 255) 0%, rgb(151 0 255) 100%);
+  padding: 40px;
+}
+
+.content {
+  padding: var(--spacing-l);
+}
+
+.description {
+  padding-top: var(--spacing-m);
+}
