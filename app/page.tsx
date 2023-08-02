@@ -1,5 +1,5 @@
 import styles from "./styles/page.module.scss";
-import { Hero } from "@components";
+import { Hero, Steps } from "@components";
 
 const dataHero = {
   title: "Brick Protocol",
@@ -35,10 +35,40 @@ const dataHero = {
   ],
 };
 
+const dataSteps = {
+  items: [
+    {
+      title: "Price",
+      description: "Set the price of what you are tokenizing.",
+    },
+    {
+      title: "Receive",
+      description:
+        "Set the token you want to receive in the sale, you can even get paid in BONK.",
+    },
+    {
+      title: "Time",
+      description:
+        "Set the time period during which the buyer can get a refund. If the buyer burns the token, they will not be able to access the funds, and you will have to wait that time to withdraw the funds.",
+    },
+    {
+      title: "Choose",
+      description:
+        "Choose between an unlimited or limited sale. In the case of a limited sale, define how many sales you want to make.",
+    },
+    {
+      title: "Fees",
+      description:
+        "If you are building an app that aims to create a marketplace, you have the option to set fees to the permissionless market you are creating.",
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <Hero {...dataHero} />
+      <Steps {...dataSteps} />
     </main>
   );
 }
