@@ -1,5 +1,5 @@
 import styles from "./styles/page.module.scss";
-import { Hero, Steps } from "@components";
+import { Hero, Steps, Cta } from "@components";
 
 const dataHero = {
   title: "Brick Protocol",
@@ -64,10 +64,17 @@ const dataSteps = {
   ],
 };
 
+const dataCta = {
+  title: "Explore more",
+  description: "Choose between an unlimited or limited sale",
+  url: "/",
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <Hero {...dataHero} />
+      <Cta {...dataCta} />
       <Steps {...dataSteps} />
     </main>
   );

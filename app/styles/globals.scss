@@ -76,6 +76,11 @@ code {
 
 a {
   text-decoration: none;
+  display: inline;
+  color: white;
+  background: black;
+  padding: var(--spacing-s) var(--spacing-l);
+  border-radius: 5px;
 }
 
 h1,
@@ -90,6 +95,7 @@ p {
 }
 
 p {
+  font-weight: 500;
   line-height: 1.3;
 }
 

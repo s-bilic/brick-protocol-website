@@ -1,7 +1,8 @@
 .card {
-  background: rgba(var(--color-light), 0.1);
+  background: #252628;
   padding: var(--spacing-m);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
+  border: solid 2px #303031
 }
 
 .outline {
