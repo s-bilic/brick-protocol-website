@@ -8,13 +8,15 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   className?: string;
+  heading?: string;
   items?: [];
 }
 
-const Steps = ({ className, items }: IProps) => {
+const Steps = ({ className, heading, items }: IProps) => {
   const classes = cx({ steps: true }, className);
   return (
     <div className={classes}>
+      {heading && <h3 className={styles.heading}>{heading}</h3>}
       {items && (
         <div className={styles.items}>
           {items.map((item, index) => (

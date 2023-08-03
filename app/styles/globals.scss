@@ -112,7 +112,8 @@ h1 {
 
 h2 {
   font-size: var(--font-xxl);
-
+  font-weight: 600;
+  
   @include medium {
     font-size: var(--font-xxxl);
   }

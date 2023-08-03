@@ -7,14 +7,16 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   className?: string;
+  heading?: string;
   items?: [];
 }
 
-const Progress = ({ className, items }: IProps) => {
+const Progress = ({ className, heading, items }: IProps) => {
   const classes = cx({ progress: true }, className);
 
   return (
     <div className={classes}>
+      {heading && <h3 className={styles.heading}>{heading}</h3>}
       {items?.map((item, index) => (
         <Card className={styles.item} key={index}>
           {(item?.title || item?.description) && (
@@ -31,9 +33,9 @@ const Progress = ({ className, items }: IProps) => {
                   ></div>
                 </div>
               )}
-              {item?.description && (
-                <span className={styles.description}>{item?.description}</span>
-              )}
+              <span className={styles.description}>
+                {item?.percentage === 100 ? "completed" : "in progress"}
+              </span>
             </div>
           )}
         </Card>

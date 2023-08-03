@@ -20,19 +20,24 @@ const Hero = ({ className, title, description, items }: IProps) => {
     <div className={classes}>
       <div className={styles.content}>
         <div className={styles.titleWrapper}>
-          <Spline scene="https://prod.spline.design/SbC-vcycj798iWIM/scene.splinecode" />
+          <Spline
+            scene="https://prod.spline.design/SbC-vcycj798iWIM/scene.splinecode"
+            style={{ height: 280 }}
+          />
           {/* <Icon name={"logo"} width={80} height={80} /> */}
           {title && <h1>{title}</h1>}
         </div>
         {description && <h5>{description}</h5>}
       </div>
-      {items && (
-        <div className={styles.items}>
-          {items.map((item, index) => (
-            <Card key={index} outline {...item} />
-          ))}
-        </div>
-      )}
+      <div>
+        {items && (
+          <div className={styles.items}>
+            {items.map((item, index) => (
+              <Card key={index} outline {...item} />
+            ))}
+          </div>
+        )}
+      </div>
       <p>Powered by</p>
       <Icon name={"solana"} height={50} width={160} />
     </div>

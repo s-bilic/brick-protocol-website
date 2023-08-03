@@ -7,27 +7,27 @@ const dataHero = {
   items: [
     {
       icon: {
-        name: "atom",
-        width: 20,
-        height: 20,
+        name: "cash",
+        width: 36,
+        height: 36,
       },
       title: "Monetize",
       description: "Easily monetize your app or services",
     },
     {
       icon: {
-        name: "atom",
-        width: 20,
-        height: 20,
+        name: "lock",
+        width: 36,
+        height: 36,
       },
       title: "Gating",
       description: "Use tokens as a gating solution ",
     },
     {
       icon: {
-        name: "atom",
-        width: 20,
-        height: 20,
+        name: "manage",
+        width: 36,
+        height: 36,
       },
       title: "Manage",
       description: "Inventory and payment methods are managable",
@@ -36,6 +36,7 @@ const dataHero = {
 };
 
 const dataSteps = {
+  heading: "How it works",
   items: [
     {
       title: "Price",
@@ -73,47 +74,57 @@ const dataCta = {
 const dataCards = {
   items: [
     {
-      title: "Fees",
+      title: "Tokenizing",
+      description:
+        "Think of a flight ticket: it represents a promise that you will enter the plane when you check in. The ticket is the token and the check-in is burning the token.",
+      icon: {
+        name: "ticket",
+      },
+    },
+    {
+      title: "Events",
+      description:
+        "If your use case needs to be sure that some event has happened, indexing a transfer is harder than using a custom program.",
+      icon: {
+        name: "confirm",
+      },
+    },
+    {
+      title: "Automate",
       description:
         "You want to automate refunds and streamline your business operations.",
       icon: {
-        name: "atom",
+        name: "automate",
       },
     },
     {
       title: "Fees",
       description:
-        "You want to automate refunds and streamline your business operations.",
+        "If you create an app that aims to create a marketplace, with this protocol a fee could be enforced.",
       icon: {
-        name: "atom",
-      },
-    },
-    {
-      title: "Fees",
-      description:
-        "You want to automate refunds and streamline your business operations.",
-      icon: {
-        name: "atom",
+        name: "fee",
       },
     },
   ],
 };
 
 const dataProgress = {
+  heading: "Feature progress",
   items: [
     {
       title: "Public indexer",
-      description: "This is a core thing",
       percentage: 100,
     },
     {
-      title: "TS library and rust crate",
-      description: "This is a core thing",
+      title: "TypeScript library",
+      percentage: 80,
+    },
+    {
+      title: "Rust crate",
       percentage: 80,
     },
     {
       title: "Invoice processing platform",
-      description: "This is a core thing",
       percentage: 50,
     },
   ],

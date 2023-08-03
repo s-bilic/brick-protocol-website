@@ -1,7 +1,12 @@
 .steps {
   max-width: 600px;
-  padding: var(--spacing-xxl) 0;
   margin: 0 auto;
+  padding: 75px 0;
+}
+
+.heading {
+  padding-bottom: 75px;
+  text-align: center;
 }
 
 .items {
@@ -19,7 +24,7 @@
     &:before {
       content: "";
       position: absolute;
-      bottom: -100px;
+      bottom: -102px;
       left: 50px;
       width: 68px;
       border: dashed 2px orange;
@@ -34,7 +39,7 @@
     &:before {
       content: "";
       position: absolute;
-      bottom: -100px;
+      bottom: -102px;
       right: 50px;
       width: 68px;
       border: dashed 2px orange;

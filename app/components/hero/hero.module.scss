@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 750px;
+  padding: 0 0 75px;
 }
 
 .content {
@@ -12,7 +13,7 @@
 }
 
 .items {
-  margin: 100px 0;
+  margin: 100px 0 50px;
   display: grid;
   width: 100%; 
   grid-template-columns: 33% 33% 33%;

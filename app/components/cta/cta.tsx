@@ -16,12 +16,14 @@ interface IProps {
 const Cta = ({ className, title, description, url }: IProps) => {
   const classes = cx({ cta: true }, className);
   return (
-    <Card className={classes}>
-      {title && <h3>{title}</h3>}
-      {description && <p>{description}</p>}
-      <div>{url && <Link href={url}>Explore the app</Link>}</div>
-      <Icon className={styles.artifact} name={"artifact"} width={300} />
-    </Card>
+    <div className={classes}>
+      <Card className={styles.card}>
+        {title && <h3>{title}</h3>}
+        {description && <p>{description}</p>}
+        <div>{url && <Link href={url}>Explore the app</Link>}</div>
+        <Icon className={styles.artifact} name={"artifact"} width={300} />
+      </Card>
+    </div>
   );
 };
 

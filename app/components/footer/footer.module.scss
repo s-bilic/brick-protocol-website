@@ -2,6 +2,7 @@
   border-top: solid 1px #252628;
   min-height: 200px;
   padding: var(--spacing-xxl);
+  background-image: radial-gradient(farthest-side at bottom left,#2b173d,transparent 900px),radial-gradient(farthest-corner at bottom right,#3a2a40,transparent 1000px);
 }
 
 .wrapper {
