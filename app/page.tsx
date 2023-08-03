@@ -69,6 +69,7 @@ const dataCta = {
   title: "Explore more",
   description: "Choose between an unlimited or limited sale",
   url: "/",
+  text: "Launch",
 };
 
 const dataCards = {
