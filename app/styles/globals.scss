@@ -96,6 +96,11 @@ p {
   color: rgba(var(--color-light), 0.7);
 }
 
+span {
+  color: rgba(var(--color-light), 0.7);
+  font-size: var(--font-xs);
+}
+
 h1 {
   font-size: var(--font-xxxl);
   font-weight: 600;

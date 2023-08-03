@@ -1,5 +1,5 @@
 import styles from "./styles/page.module.scss";
-import { Hero, Steps, Cta, Cards } from "@components";
+import { Hero, Steps, Cta, Cards, Progress } from "@components";
 
 const dataHero = {
   title: "Brick Protocol",
@@ -99,6 +99,26 @@ const dataCards = {
   ],
 };
 
+const dataProgress = {
+  items: [
+    {
+      title: "Public indexer",
+      description: "This is a core thing",
+      percentage: 100,
+    },
+    {
+      title: "TS library and rust crate",
+      description: "This is a core thing",
+      percentage: 80,
+    },
+    {
+      title: "Invoice processing platform",
+      description: "This is a core thing",
+      percentage: 50,
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -106,6 +126,7 @@ export default function Home() {
       <Cta {...dataCta} />
       <Steps {...dataSteps} />
       <Cards {...dataCards} />
+      <Progress {...dataProgress} />
     </main>
   );
 }
