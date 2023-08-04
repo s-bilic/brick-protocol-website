@@ -4,5 +4,6 @@ import Cta from "./cta/cta";
 import Cards from "./cards/cards";
 import Footer from "./footer/footer";
 import Progress from "./progress/progress";
+import Column from "./column/column";
 
-export { Hero, Steps, Cta, Cards, Footer, Progress };
+export { Hero, Steps, Cta, Cards, Footer, Progress, Column };

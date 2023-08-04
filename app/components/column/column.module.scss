@@ -1,0 +1,28 @@
+.column {
+  max-width: 640px;
+  padding: 75px 0;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: var(--spacing-m);
+  font-style: italic;
+  color: orange;
+}
+
+.description {
+  font-size: 28px;
+  color: rgba(var(--color-light), 1);
+  margin-bottom: 20px;
+}
+
+.fullWidth {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alignRight {
+  margin-left: auto;
+  text-align: right;
+}

@@ -29,15 +29,15 @@ const Hero = ({ className, title, description, items }: IProps) => {
         </div>
         {description && <h5>{description}</h5>}
       </div>
-      <div>
-        {items && (
-          <div className={styles.items}>
-            {items.map((item, index) => (
-              <Card key={index} outline {...item} />
-            ))}
-          </div>
-        )}
-      </div>
+
+      {items && (
+        <div className={styles.items}>
+          {items.map((item, index) => (
+            <Card key={index} outline {...item} />
+          ))}
+        </div>
+      )}
+
       <p>Powered by</p>
       <Icon name={"solana"} height={50} width={160} />
       <Icon className={styles.layer} name={"layer"} />
