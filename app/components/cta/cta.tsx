@@ -20,7 +20,7 @@ const Cta = ({ className, title, description, url, text }: IProps) => {
     <div className={classes}>
       <Card className={styles.card}>
         {title && <h3>{title}</h3>}
-        {description && <p>{description}</p>}
+        {description && <p className={styles.description}>{description}</p>}
         {url && <Button href={url} text={text} />}
         <Icon className={styles.artifact} name={"artifact"} width={300} />
       </Card>

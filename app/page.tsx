@@ -1,5 +1,8 @@
+"use client";
+
 import styles from "./styles/page.module.scss";
 import { Hero, Steps, Cta, Cards, Progress } from "@components";
+import Fade from "react-reveal/Fade";
 
 const dataHero = {
   title: "Brick Protocol",
@@ -66,8 +69,8 @@ const dataSteps = {
 };
 
 const dataCta = {
-  title: "Explore more",
-  description: "Choose between an unlimited or limited sale",
+  title: "Explore",
+  description: "Try the application and see for yourself",
   url: "/",
   text: "Launch",
 };
@@ -134,11 +137,19 @@ const dataProgress = {
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Hero {...dataHero} />
+      <Fade>
+        <Hero {...dataHero} />
+      </Fade>
       <Cta {...dataCta} />
-      <Steps {...dataSteps} />
-      <Cards {...dataCards} />
-      <Progress {...dataProgress} />
+      <Fade>
+        <Steps {...dataSteps} />
+      </Fade>
+      <Fade>
+        <Cards {...dataCards} />
+      </Fade>
+      <Fade>
+        <Progress {...dataProgress} />
+      </Fade>
     </main>
   );
 }

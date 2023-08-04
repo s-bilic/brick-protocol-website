@@ -15,6 +15,10 @@
   overflow: hidden;
 }
 
+.description {
+  color: rgba(var(--color-light), 1);
+}
+
 .artifact {
   position: absolute;
   top: -30px;

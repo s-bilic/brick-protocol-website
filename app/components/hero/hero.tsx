@@ -40,6 +40,7 @@ const Hero = ({ className, title, description, items }: IProps) => {
       </div>
       <p>Powered by</p>
       <Icon name={"solana"} height={50} width={160} />
+      <Icon className={styles.layer} name={"layer"} />
     </div>
   );
 };

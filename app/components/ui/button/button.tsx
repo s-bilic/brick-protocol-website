@@ -17,9 +17,11 @@ const Button = ({ className, href, text }: IProps) => {
 
   return (
     <div>
-      <Link className={classes} href={href}>
-        <span>{text}</span>
-      </Link>
+      {href && text && (
+        <Link className={classes} href={href}>
+          <span>{text}</span>
+        </Link>
+      )}
     </div>
   );
 };
