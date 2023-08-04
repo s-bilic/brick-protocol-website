@@ -1,8 +1,10 @@
+@import "../../styles/mixins.scss";
+
 .cards {
-  background-color: rgb(27, 27, 27);
-  border: solid 2px rgb(45, 45, 45);
+  background-color: rgba(var(--color-stable-700), 1);
+  border: solid 2px rgba(var(--color-stable-500), 1);
   border-right: none;
-  border-bottom: none;
+  border-left: none;
   margin: 75px 0;
   width: 100vw;
   position: relative;
@@ -10,28 +12,39 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  padding: var(--spacing-m);
+  
+  @include medium {
+    padding: 0;
+  }
 }
 
-.wrapper {
+.items {
   display: grid;
   justify-content: center;
-  grid-template-columns: 33% 33%;
+  grid-template-columns: 100%;
   gap: var(--spacing-xl);
   max-width: var(--global-width);
   margin: 0 auto;
   padding: 75px 0;
+
+  @include medium {
+    grid-template-columns: 33% 33%;
+  }
 }
 
 .item {
   padding: 0;
   overflow: hidden;
 
-  &:nth-child(odd) {
-    transform: translateY(0);
-  }
-
-  &:nth-child(even) {
-    transform: translateY(40px);
+  @include medium {
+    &:nth-child(odd) {
+      transform: translateY(0);
+    }
+  
+    &:nth-child(even) {
+      transform: translateY(40px);
+    }
   }
 }
 

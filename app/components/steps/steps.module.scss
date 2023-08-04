@@ -1,3 +1,5 @@
+@import '../../styles/mixins.scss';
+
 .steps {
   max-width: 600px;
   margin: 0 auto;
@@ -20,7 +22,10 @@
   padding: var(--spacing-xl);
   
   &:nth-child(odd) {
-    right: 10%;
+    @include medium {
+      right: 10%;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -35,7 +40,9 @@
   }
 
   &:nth-child(even) {
-    left: 10%;
+    @include medium {
+      left: 10%;
+    }
     &:before {
       content: "";
       position: absolute;

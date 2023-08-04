@@ -1,3 +1,5 @@
+@import '../../styles/mixins.scss';
+
 .footer {
   border-top: solid 1px rgba(var(--color-stable-500), 1);
   min-height: 200px;
@@ -7,21 +9,38 @@
 
 .wrapper {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   max-width: var(--global-width);
   margin: 0 auto;
+  text-align: center;
+
+  @include medium {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-bottom: var(--spacing-xl);
+
+  @include medium {
+    margin-bottom: 0;
+  }
 }
 
 .items {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   gap: var(--spacing-xxl);
+
+  @include medium {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .column {

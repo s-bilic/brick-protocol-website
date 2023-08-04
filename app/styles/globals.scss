@@ -9,7 +9,7 @@
   --color-positive: 107, 231, 149;
   --color-stable: 37, 38, 40;
   --color-stable-500: 48, 48, 49;
-  --color-stable-700: 112, 112, 118;
+  --color-stable-700: 27, 27, 27;
   --font-xxs: 12px;
   --font-xs: 14px;
   --font-s: 16px;
@@ -57,7 +57,7 @@ body {
 main {
   max-width: var(--global-width);
   margin: 0 auto;
-  padding: var(--spacing-s)
+  padding: var(--spacing-m)
 }
 
 ul {
