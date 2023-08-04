@@ -1,8 +1,24 @@
 .cards {
+  background-color: rgb(27, 27, 27);
+  margin: 75px 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border: solid 2px rgb(45, 45, 45);
+  border-right: none;
+  border-bottom: none;
+}
+
+.wrapper {
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 25% 25% 25%;
   gap: var(--spacing-l);
+  max-width: var(--global-width);
+  margin: 0 auto;
   padding: 75px 0;
 }
 

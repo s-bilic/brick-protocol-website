@@ -14,23 +14,25 @@ const Cards = ({ className, items }: IProps) => {
   const classes = cx({ cards: true }, className);
   return (
     <div className={classes}>
-      {items?.map((item, index) => (
-        <Card className={styles.item} key={index}>
-          {item?.icon && (
-            <div className={styles.background}>
-              <Icon width={60} {...item?.icon} />
-            </div>
-          )}
-          {(item?.title || item?.description) && (
-            <div className={styles.content}>
-              {item?.title && <h6>{item?.title}</h6>}
-              {item?.description && (
-                <p className={styles.description}>{item?.description}</p>
-              )}
-            </div>
-          )}
-        </Card>
-      ))}
+      <div className={styles.wrapper}>
+        {items?.map((item, index) => (
+          <Card className={styles.item} key={index}>
+            {item?.icon && (
+              <div className={styles.background}>
+                <Icon width={60} {...item?.icon} />
+              </div>
+            )}
+            {(item?.title || item?.description) && (
+              <div className={styles.content}>
+                {item?.title && <h6>{item?.title}</h6>}
+                {item?.description && (
+                  <p className={styles.description}>{item?.description}</p>
+                )}
+              </div>
+            )}
+          </Card>
+        ))}
+      </div>
     </div>
   );
 };

@@ -2,8 +2,8 @@
 
 import styles from "./styles/page.module.scss";
 import { Hero, Steps, Cta, Cards, Progress } from "@components";
+import { Slider } from "@ui";
 import Fade from "react-reveal/Fade";
-
 const dataHero = {
   title: "Brick Protocol",
   description: "A configurable payment protocol to monetize your application",
@@ -69,7 +69,7 @@ const dataSteps = {
 };
 
 const dataCta = {
-  title: "Explore",
+  title: "Discover",
   description: "Try the application and see for yourself",
   url: "/",
   text: "Launch",
@@ -134,6 +134,23 @@ const dataProgress = {
   ],
 };
 
+const dataSlider = {
+  items: [
+    {
+      icon: "solana",
+    },
+    {
+      icon: "fishnet",
+    },
+    {
+      icon: "superteam",
+    },
+    {
+      icon: "solanahh",
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -143,6 +160,9 @@ export default function Home() {
       <Cta {...dataCta} />
       <Fade>
         <Steps {...dataSteps} />
+      </Fade>
+      <Fade>
+        <Slider {...dataSlider} />
       </Fade>
       <Fade>
         <Cards {...dataCards} />
