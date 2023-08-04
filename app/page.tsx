@@ -83,7 +83,7 @@ const dataCards = {
       description:
         "Anyone can sell on the marketplace. The alternative is Token gate or KYC.",
       icon: {
-        name: "confirm",
+        name: "eye",
       },
     },
     {
@@ -107,7 +107,7 @@ const dataCards = {
       description:
         "The marketplace offers rewards to users who make purchases on the platform.",
       icon: {
-        name: "confirm",
+        name: "reward",
       },
     },
     {
@@ -115,7 +115,7 @@ const dataCards = {
       description:
         "The marketplace decides whether access to products or services can be resold. ",
       icon: {
-        name: "automate",
+        name: "store",
       },
     },
     {
@@ -123,7 +123,7 @@ const dataCards = {
       description:
         "Tokens can have representations (images, videos) linked to them, useful for  video games marketplaces (skins, covers, etc.).",
       icon: {
-        name: "fee",
+        name: "metadata",
       },
     },
   ],
@@ -184,7 +184,7 @@ const dataExample2 = {
 
 const dataExample3 = {
   description:
-    "Brick aims to eliminate high commissions imposed by competitors such as Stripe and Paypal, offering businesses 0% fees for onboarding to the Solana blockchain.",
+    "Brick aims to cut down on high commissions from competitors like Stripe and Paypal by providing businesses with a 0% fee for onboarding to the Solana blockchain.",
 };
 
 export default function Home() {

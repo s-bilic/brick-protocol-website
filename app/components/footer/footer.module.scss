@@ -24,6 +24,13 @@
   }
 }
 
+.iconsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -31,6 +38,23 @@
 
   @include medium {
     margin-bottom: 0;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-l);
+
+  @include medium {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+}
+
+.social { 
+  &:not(:last-child) {
+    margin-right: var(--spacing-m);
   }
 }
 

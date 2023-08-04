@@ -73,6 +73,10 @@ code {
 a {
   text-decoration: none;
   color: rgba(var(--color-primary), 1);
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 h1,

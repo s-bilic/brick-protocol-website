@@ -26,13 +26,21 @@
 
   @include medium {
     grid-template-columns: 32% 32% 32%;
-    margin: 100px 0 50px;
+    margin: 90px 0 40px;
   }
+}
+
+.description {
+  margin-bottom: var(--spacing-xl);
 }
 
 .layer {
   position: absolute;
-  top: 0;
+  top: 270px;
   z-index: -1;
   transform: scale(2);
+
+  @include medium {
+    top: 0;
+  }
 }

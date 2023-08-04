@@ -21,6 +21,7 @@ const Cards = ({ className, items }: IProps) => {
   const classes = cx({ cards: true }, className);
   return (
     <div className={classes}>
+      <Icon name={"wall-bottom"} className={styles.layer} />
       <div className={styles.items}>
         {items?.map((item, index) => (
           <Card className={styles.item} key={index}>

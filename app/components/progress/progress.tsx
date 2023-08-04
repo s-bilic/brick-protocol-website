@@ -3,7 +3,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./progress.module.scss";
-import { Card } from "@ui";
+import { Card, Icon } from "@ui";
 const cx = classNames.bind(styles);
 
 interface IProps {

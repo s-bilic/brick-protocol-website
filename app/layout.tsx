@@ -13,19 +13,16 @@ export const metadata: Metadata = {
 const dataFooter = {
   socials: [
     {
-      icon: {
-        name: "atom",
-      },
+      name: "twitter",
+      href: "https://twitter.com/BrickProtocol",
+      width: 28,
+      height: 28,
     },
     {
-      icon: {
-        name: "atom",
-      },
-    },
-    {
-      icon: {
-        name: "atom",
-      },
+      name: "discord",
+      href: "https://twitter.com/BrickProtocol",
+      width: 28,
+      height: 28,
     },
   ],
   items: [

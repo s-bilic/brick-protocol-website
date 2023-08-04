@@ -11,10 +11,11 @@ interface IProps {
   className?: string;
   href?: string;
   text?: string;
+  outline?: boolean;
 }
 
-const Button = ({ className, href, text }: IProps) => {
-  const classes = cx({ button: true }, className);
+const Button = ({ className, href, text, outline }: IProps) => {
+  const classes = cx({ button: true, outline }, className);
 
   return (
     <div>

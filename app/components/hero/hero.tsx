@@ -3,7 +3,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./hero.module.scss";
-import { Icon, Card } from "@ui";
+import { Icon, Card, Button } from "@ui";
 const cx = classNames.bind(styles);
 import Spline from "@splinetool/react-spline";
 
@@ -22,16 +22,17 @@ const Hero = ({ className, title, description, items }: IProps) => {
         <div className={styles.titleWrapper}>
           <Spline
             scene="https://prod.spline.design/SbC-vcycj798iWIM/scene.splinecode"
-            style={{ height: 280 }}
+            style={{ height: 260 }}
           />
           {title && <h1>{title}</h1>}
         </div>
-        {description && <h5>{description}</h5>}
+        {description && <h5 className={styles.description}>{description}</h5>}
+        <Button href={"lol"} text={"Launch"} outline />
       </div>
       {items && (
         <div className={styles.items}>
           {items.map((item, index) => (
-            <Card key={index} outline {...item} />
+            <Card key={index} className={styles.item} outline {...item} />
           ))}
         </div>
       )}
