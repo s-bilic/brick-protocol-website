@@ -1,18 +1,17 @@
 .card {
-  background: #252628;
+  background: rgba(var(--color-stable), 1);
   padding: var(--spacing-m);
   border-radius: var(--radius-m);
-  border: solid 2px #303031;
-  // box-shadow: rgba(187, 132, 5, 0.684) 0px 2px 20px 4px;
+  border: solid 2px rgba(var(--color-stable-500), 1);
 
 }
 
 .outline {
-  border: solid 2px orange;
+  border: solid 2px rgba(var(--color-primary), 1);
 }
 
 .wrapper {
-  padding-top: 20px;
+  padding-top: var(--spacing-l);
 }
 
 .title {

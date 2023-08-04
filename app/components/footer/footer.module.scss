@@ -1,5 +1,5 @@
 .footer {
-  border-top: solid 1px #252628;
+  border-top: solid 1px rgba(var(--color-stable-500), 1);
   min-height: 200px;
   padding: var(--spacing-xxl);
   background-image: radial-gradient(farthest-side at bottom left,#2b173d,transparent 900px),radial-gradient(farthest-corner at bottom right,#3a2a40,transparent 1000px);

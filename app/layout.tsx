@@ -37,6 +37,10 @@ const dataFooter = {
           url: "",
         },
         {
+          link: "Github",
+          url: "",
+        },
+        {
           link: "Notion",
           url: "",
         },

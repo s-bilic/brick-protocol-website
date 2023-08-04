@@ -11,7 +11,11 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   className?: string;
-  items?: [];
+  items?: [
+    {
+      icon?: string;
+    },
+  ];
 }
 
 const Slider = ({ className, items }: IProps) => {

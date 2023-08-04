@@ -11,7 +11,7 @@ interface IProps {
   className?: string;
   title?: string;
   description?: string;
-  items?: [];
+  items?: [React.ReactComponentElement<typeof Card>];
 }
 
 const Hero = ({ className, title, description, items }: IProps) => {
@@ -24,12 +24,10 @@ const Hero = ({ className, title, description, items }: IProps) => {
             scene="https://prod.spline.design/SbC-vcycj798iWIM/scene.splinecode"
             style={{ height: 280 }}
           />
-          {/* <Icon name={"logo"} width={80} height={80} /> */}
           {title && <h1>{title}</h1>}
         </div>
         {description && <h5>{description}</h5>}
       </div>
-
       {items && (
         <div className={styles.items}>
           {items.map((item, index) => (
@@ -37,7 +35,6 @@ const Hero = ({ className, title, description, items }: IProps) => {
           ))}
         </div>
       )}
-
       <p>Powered by</p>
       <Icon name={"solana"} height={50} width={160} />
       <Icon className={styles.layer} name={"layer"} />

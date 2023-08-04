@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./cards.module.scss";
@@ -7,7 +8,13 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   className?: string;
-  items?: [];
+  items?: [
+    {
+      icon?: React.ReactComponentElement<typeof Icon>;
+      title?: string;
+      description?: string;
+    },
+  ];
 }
 
 const Cards = ({ className, items }: IProps) => {

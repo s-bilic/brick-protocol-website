@@ -9,7 +9,12 @@ const cx = classNames.bind(styles);
 interface IProps {
   className?: string;
   heading?: string;
-  items?: [];
+  items?: [
+    {
+      title?: string;
+      description?: string;
+    },
+  ];
 }
 
 const Steps = ({ className, heading, items }: IProps) => {

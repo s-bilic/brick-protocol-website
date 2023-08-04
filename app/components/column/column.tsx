@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import classNames from "classnames/bind";
 import styles from "./column.module.scss";
@@ -30,7 +31,7 @@ const Column = ({
     <div className={classes}>
       {title && <h6 className={styles.title}>{title}</h6>}
       {description && <p className={styles.description}>{description}</p>}
-      <Icon name={icon} width={40} height={40} />
+      {icon && <Icon name={icon} width={40} height={40} />}
     </div>
   );
 };

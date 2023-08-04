@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
 import classNames from "classnames/bind";
@@ -8,7 +9,17 @@ const cx = classNames.bind(styles);
 
 interface IProps {
   className?: string;
-  items?: [];
+  items?: [
+    {
+      title?: string;
+      column?: [
+        {
+          url?: string;
+          link?: string;
+        },
+      ];
+    },
+  ];
   socials?: [];
 }
 
@@ -21,26 +32,27 @@ const Footer = ({ className, items, socials }: IProps) => {
           <Icon name={"logo"} width={60} height={60} />
           <h6>Brick Protocol</h6>
         </div>
-
         {socials?.map((item, index) => (
           <Icon key={index} width={20} {...item} />
         ))}
-        <div className={styles.items}>
-          {items?.map((item, index) => (
-            <div key={index}>
-              {item?.title && <h6 className={styles.title}>{item?.title}</h6>}
-              {item?.column && (
-                <div className={styles.column}>
-                  {item?.column?.map((column, i) => (
-                    <Link key={i} href={column?.url} className={styles.link}>
-                      {column?.link}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+        {items && (
+          <div className={styles.items}>
+            {items?.map((item, index) => (
+              <div key={index}>
+                {item?.title && <h6 className={styles.title}>{item?.title}</h6>}
+                {item?.column && (
+                  <div className={styles.column}>
+                    {item?.column?.map((column, i) => (
+                      <Link key={i} href={column?.url} className={styles.link}>
+                        {column?.link}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </footer>
   );

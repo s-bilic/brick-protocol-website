@@ -12,9 +12,17 @@ interface IProps {
   description?: string;
   text?: string;
   url?: string;
+  image?: boolean;
 }
 
-const Cta = ({ className, title, description, url, text }: IProps) => {
+const Cta = ({
+  className,
+  title,
+  description,
+  url,
+  text,
+  image = true,
+}: IProps) => {
   const classes = cx({ cta: true }, className);
   return (
     <div className={classes}>
@@ -22,7 +30,9 @@ const Cta = ({ className, title, description, url, text }: IProps) => {
         {title && <h3>{title}</h3>}
         {description && <p className={styles.description}>{description}</p>}
         {url && <Button href={url} text={text} />}
-        <Icon className={styles.artifact} name={"artifact"} width={300} />
+        {image && (
+          <Icon className={styles.artifact} name={"artifact"} width={300} />
+        )}
       </Card>
     </div>
   );

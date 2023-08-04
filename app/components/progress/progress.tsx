@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React from "react";
 import classNames from "classnames/bind";
 import styles from "./progress.module.scss";
 import { Card } from "@ui";
@@ -8,7 +9,12 @@ const cx = classNames.bind(styles);
 interface IProps {
   className?: string;
   heading?: string;
-  items?: [];
+  items?: [
+    {
+      title?: string;
+      percentage?: number;
+    },
+  ];
 }
 
 const Progress = ({ className, heading, items }: IProps) => {
@@ -19,7 +25,7 @@ const Progress = ({ className, heading, items }: IProps) => {
       {heading && <h3 className={styles.heading}>{heading}</h3>}
       {items?.map((item, index) => (
         <Card className={styles.item} key={index}>
-          {(item?.title || item?.description) && (
+          {(item?.title || item?.percentage) && (
             <div className={styles.content}>
               {item?.title && <h6>{item?.title}</h6>}
               {item?.percentage && (

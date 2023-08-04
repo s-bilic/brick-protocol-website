@@ -3,13 +3,12 @@
 :root {
   --color-dark: 17, 17, 17;
   --color-light: 255, 255, 255;
-  --color-positive: 65, 71, 246;
-  --color-balanced: 82, 196, 26;
-  --color-royal: 165, 177, 247;
-  --color-assertive: 166, 29, 35;
-  --color-energized: 253, 180, 0;
-  --color-stable: 231, 235, 240;
-  --color-stable-500: 148, 148, 154;
+  --color-primary: 255, 165, 0;
+  --color-primary-500: 255, 147, 0;
+  --color-secondary: 35, 25, 40;
+  --color-positive: 107, 231, 149;
+  --color-stable: 37, 38, 40;
+  --color-stable-500: 48, 48, 49;
   --color-stable-700: 112, 112, 118;
   --font-xxs: 12px;
   --font-xs: 14px;
@@ -42,11 +41,8 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
-  background: rgb(4,3,2);
-  background: -moz-linear-gradient(0deg, rgba(4,3,2,1) 0%, rgba(16,16,16,1) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(4,3,2,1) 0%, rgba(16,16,16,1) 100%);
-  background: linear-gradient(0deg, rgba(4,3,2,1) 0%, rgba(16,16,16,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040302",endColorstr="#101010",GradientType=1);
+  background: rgb(4,3,2);  
+  background: linear-gradient(0deg, rgba(4,3,2,1) 0%, rgba(16,16,16,1) 100%);  
 }
 
 body {
@@ -76,7 +72,7 @@ code {
 
 a {
   text-decoration: none;
-  color: orange;
+  color: rgba(var(--color-primary), 1);
 }
 
 h1,
@@ -121,6 +117,7 @@ h2 {
 
 h3 {
   font-size: var(--font-xl);
+  font-weight: 600;
 
   @include medium {
     font-size: var(--font-xxl);
@@ -129,6 +126,7 @@ h3 {
 
 h4 {
   font-size: var(--font-l);
+  font-weight: 600;
 
   @include medium {
     font-size: var(--font-xl);
@@ -146,6 +144,7 @@ h5 {
 
 h6 {
   font-size: var(--font-s);
+  font-weight: 500;
 
   @include medium {
     font-size: var(--font-m);
@@ -164,24 +163,16 @@ h6 {
   color: rgba(var(--color-dark), 1);
 }
 
-.color-positive  {
+.color-primary {
+  color: rgba(var(--color-primary), 1);
+}
+
+.color-secondary {
+  color: rgba(var(--color-secondary), 1);
+}
+
+.color-positive {
   color: rgba(var(--color-positive), 1);
-}
-
-.color-balanced {
-  color: rgba(var(--color-balanced), 1);
-}
-
-.color-royal {
-  color: rgba(var(--color-royal), 1);
-}
-
-.color-assertive {
-  color: rgba(var(--color-assertive), 1);
-}
-
-.color-energized {
-  color: rgba(var(--color-energized), 1);
 }
 
 .color-stable {
@@ -208,24 +199,16 @@ h6 {
   background-color: rgba(var(--color-dark), 1);
 }
 
+.background-primary {
+  background-color: rgba(var(--color-primary), 1);
+}
+
+.background-secondary {
+  background-color: rgba(var(--color-secondary), 1);
+}
+
 .background-positive {
   background-color: rgba(var(--color-positive), 1);
-}
-
-.background-royal {
-  background-color: rgba(var(--color-royal), 1);
-}
-
-.background-balanced {
-  background-color: rgba(var(--color-balanced), 1);
-}
-
-.background-assertive {
-  background-color: rgba(var(--color-assertive), 1);
-}
-
-.background-energized {
-  background-color: rgba(var(--color-energized), 1);
 }
 
 .background-stable {
