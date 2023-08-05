@@ -11,10 +11,11 @@ interface IProps {
   className?: string;
   title?: string;
   description?: string;
+  href?: string;
   items?: [React.ReactComponentElement<typeof Card>];
 }
 
-const Hero = ({ className, title, description, items }: IProps) => {
+const Hero = ({ className, title, description, href, items }: IProps) => {
   const classes = cx({ hero: true }, className);
   return (
     <div className={classes}>
@@ -23,11 +24,18 @@ const Hero = ({ className, title, description, items }: IProps) => {
           <Spline
             scene="https://prod.spline.design/SbC-vcycj798iWIM/scene.splinecode"
             style={{ height: 260 }}
+            className={styles.logo3d}
+          />
+          <Icon
+            name={"logo"}
+            width={80}
+            height={80}
+            className={styles.logo2d}
           />
           {title && <h1>{title}</h1>}
         </div>
         {description && <h5 className={styles.description}>{description}</h5>}
-        <Button href={"lol"} text={"Launch"} outline />
+        {href && <Button href={href} text={"Launch"} outline />}
       </div>
       {items && (
         <div className={styles.items}>

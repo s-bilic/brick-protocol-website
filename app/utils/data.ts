@@ -1,6 +1,7 @@
 const dataHero = {
   title: "Brick Protocol",
   description: "A configurable payment protocol to monetize your application",
+  href: "httpslinkgoeshere",
   items: [
     {
       icon: {
@@ -65,7 +66,7 @@ const dataSteps = {
 const dataCta = {
   title: "Discover",
   description: "Try the application and see for yourself",
-  url: "/",
+  href: "/",
   text: "Launch",
 };
 
@@ -161,6 +162,15 @@ const dataSlider = {
   ],
 };
 
+const dataPartners = {
+  items: [
+    {
+      icon: "fishnet",
+      href: "https://fishnet.tech/",
+    },
+  ],
+};
+
 const dataColumn1 = {
   description:
     "Brick aims to cut down on high commissions from competitors like Stripe and Paypal by providing businesses with a 0% fee for onboarding to the Solana blockchain.",
@@ -190,4 +200,5 @@ export {
   dataProgress,
   dataSlider,
   dataSteps,
+  dataPartners,
 };

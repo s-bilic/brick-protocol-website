@@ -9,11 +9,19 @@ import {
   dataCta,
   dataHero,
   dataProgress,
-  dataSlider,
   dataSteps,
+  dataPartners,
 } from "./utils/data";
-import { Hero, Steps, Cta, Cards, Progress, Column } from "@components";
-import { Slider } from "@ui";
+import {
+  Hero,
+  Steps,
+  Cta,
+  Cards,
+  Progress,
+  Column,
+  Partners,
+} from "@components";
+
 import Fade from "react-reveal/Fade";
 
 export default function Home() {
@@ -25,9 +33,9 @@ export default function Home() {
         <Cta {...dataCta} />
         <Steps {...dataSteps} />
         <Column align="right" {...dataColumn2} />
-        <Slider {...dataSlider} />
         <Column {...dataColumn3} />
         <Cards {...dataCards} />
+        <Partners {...dataPartners} />
         <Progress {...dataProgress} />
       </Fade>
     </main>

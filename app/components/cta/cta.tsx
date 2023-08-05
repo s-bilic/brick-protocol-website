@@ -11,7 +11,7 @@ interface IProps {
   title?: string;
   description?: string;
   text?: string;
-  url?: string;
+  href?: string;
   image?: boolean;
 }
 
@@ -19,7 +19,7 @@ const Cta = ({
   className,
   title,
   description,
-  url,
+  href,
   text,
   image = true,
 }: IProps) => {
@@ -29,7 +29,7 @@ const Cta = ({
       <Card className={styles.card}>
         {title && <h3>{title}</h3>}
         {description && <p className={styles.description}>{description}</p>}
-        {url && <Button href={url} text={text} />}
+        {href && <Button href={href} text={text} />}
         {image && (
           <Icon className={styles.artifact} name={"artifact"} width={300} />
         )}

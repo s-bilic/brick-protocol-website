@@ -11,6 +11,25 @@
   position: relative;
 }
 
+.logo2d {
+  margin-bottom: var(--spacing-l);
+  display: block;
+
+  @include medium {
+
+    display: none;
+  }
+}
+
+.logo3d {
+  display: none;
+
+  @include medium {
+
+    display: block;
+  }
+}
+
 .content {
   margin-top: var(--spacing-m);
   text-align: center;
@@ -36,7 +55,7 @@
 
 .layer {
   position: absolute;
-  top: 270px;
+  top: 140px;
   z-index: -1;
   transform: scale(2);
 
