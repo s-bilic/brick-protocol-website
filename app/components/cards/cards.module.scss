@@ -13,6 +13,7 @@
   margin-left: -50vw;
   margin-right: -50vw;
   padding: var(--spacing-m);
+  overflow: hidden;
   
   @include medium {
     padding: 0;
